@@ -132,9 +132,9 @@ then
 fi
 if [[ $(grep -c 'deltarpm=' /etc/dnf/dnf.conf) -lt 1 ]]
 then
-        echo -n "- - - Correction deltarpm deactivated: "
-        echo "deltarpm=false" >> /etc/dnf/dnf.conf
-        check_cmd
+    echo -n "- - - Correction deltarpm deactivated: "
+    echo "deltarpm=false" >> /etc/dnf/dnf.conf
+    check_cmd
 fi
 
 ### UPDATE RPM
@@ -189,7 +189,7 @@ done
 
 ## INSTALL TEXLIVE
 echo "07- Check TEXLIVE components"
-for p in $RPMFUSIONCOMP
+for p in $LATEX
 do
 	if ! check_pkg "$p"
 	then
@@ -224,7 +224,7 @@ do
 			check_cmd
 		fi
 	fi
-done < "$ICI/packages.list"
+done < "$HERE/packages.list"
 
 ### INSTALL/REMOVE FLATPAK FOLLOWING LIST
 echo "09- Manage FLATPAK packages"
@@ -251,4 +251,4 @@ do
 			check_cmd
 		fi
 	fi
-done < "$ICI/flatpak.list"
+done < "$HERE/flatpak.list"
