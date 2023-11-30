@@ -1,0 +1,17 @@
+#add:packagename
+#del:packagename
+
+# GNOME Apps
+add:gnome-tweaks
+
+# CLI : Console
+add:lsd
+add:zsh
+add:gh
+
+# CLI : System
+del:neofetch
+
+# GUI : Office
+add:thunderbird
+del:gnome-tour
