@@ -10,7 +10,7 @@ add:zsh
 add:gh
 
 # CLI : System
-del:neofetch
+add:neofetch
 
 # GUI : Office
 add:thunderbird
