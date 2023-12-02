@@ -62,3 +62,37 @@ wget https://code.visualstudio.com/sha/download?build=stable&os=linux-rpm-x64
 sudo dnf install ./code-1.84.2-1699528436.el7.x86_64.rpm
 ```
 
+## Terminal setup
+### Download and install Meslo Nerd Font
+Download the fonts:
+
+```
+cd ~/Downloads
+wget https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.2/Meslo.zip
+unzip Meslo.zip -d ~/.fonts
+fc-cache -fv
+```
+### Install Oh my zsh
+See https://ohmyz.sh/#install for updates
+
+```
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+```
+
+### Install powerlevel10k
+
+See https://github.com/romkatv/powerlevel10k#installation for updates
+
+
+```
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
+```
+
+Set `ZSH_THEME="powerlevel10k/powerlevel10k"` in `~/.zshrc`.
+
+Or copy the `/zshrc` file provided here :
+
+```
+cd ~/fedora-config
+cp ./.zshrc ~/.zshrc
+```
