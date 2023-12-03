@@ -26,6 +26,8 @@ sudo ./config-fedora.sh
 
 ## Additional packages to manually install
 ### Zoom
+Infos here: https://zoom.us/download
+
 Download and install the rpm package:
 
 ```
@@ -35,6 +37,8 @@ sudo dnf install ./zoom_x86_64.rpm
 ```
 
 ### Proton VPN
+Infos here: https://protonvpn.com/support/official-linux-vpn-fedora/
+
 Download and install the rpm package:
 
 ```
@@ -45,6 +49,8 @@ sudo dnf install --refresh proton-vpn-gnome-desktop
 ```
 
 ### Proton Mail Bridge
+Infos here: https://proton.me/mail/bridge
+
 Download and install the rpm package:
 
 ```
@@ -54,6 +60,8 @@ sudo dnf install ./protonmail-bridge-3.6.1-2.x86_64.rpm
 ```
 
 ### Microsoft Visual Studio Code
+Infos here: https://code.visualstudio.com/download
+
 Download and install the rpm package:
 
 ```
@@ -95,4 +103,28 @@ Or copy the `/zshrc` file provided here :
 ```
 cd ~/fedora-config
 cp ./.zshrc ~/.zshrc
+```
+
+### Install zsh plugins 
+#### Syntax highlighting
+See infos here: https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/INSTALL.md
+
+Download directly in the plugin folder:
+
+```
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+```
+
+#### Autosuggestions
+Infos here: https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md
+
+Download directly in the plugin folder:
+```
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+```
+
+Activate the plugins in your `.zshrc` file:
+
+```
+plugins=(git zsh-syntax-highlighting zsh-autosuggestions command-not-found)
 ```
