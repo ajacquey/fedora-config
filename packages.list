@@ -4,14 +4,17 @@
 # GNOME Apps
 add:gnome-tweaks
 
-# CLI : Console
+# CLI: Console
 add:lsd
 add:zsh
 add:gh
 
-# CLI : System
+# CLI: System
 add:neofetch
 
-# GUI : Office
+# GUI: Office
 add:thunderbird
 del:gnome-tour
+
+# GUI: Scientific
+add:paraview
