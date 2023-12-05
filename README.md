@@ -69,6 +69,13 @@ cd ~/Downloads
 wget https://code.visualstudio.com/sha/download?build=stable&os=linux-rpm-x64
 sudo dnf install ./code-1.84.2-1699528436.el7.x86_64.rpm
 ```
+### Dropbox
+Infos here: https://www.dropbox.com/install
+
+```
+cd ~/Downloads
+sudo dnf install ./nautilus-dropbox-2023.09.06-1.fedora.x86_64.rpm
+```
 
 ## Terminal setup
 ### Download and install Meslo Nerd Font
